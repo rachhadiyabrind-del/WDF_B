@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Student Hub Portal</title>
+
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Student Hub Portal</h1>
+
+        <button class="menu-btn" onclick="showMenu()">☰</button>
+
+        <nav id="menu">
+            <a href="./profile.html">Profile</a>
+            <a href="./dashboard.html">Dashboard</a>
+            <a href="./contact.html">Contact Us</a>
+            <a href="./aboutus.html">About Us</a>
+            <a href="./settings.html">Settings</a>
+            <a href="./index.html">Logout</a>
+            <a href="./FAQ.html">FAQ</a>
+            <a href="./events.html">Events</a>
+        </nav>
+
+        <button class="theme-btn" onclick="changeTheme()">
+            Light / Dark
+        </button>
+
+    </header>
+
+
+
+    <div class="notification" id="notification">
+        Welcome to Student Hub Portal!
+        <button onclick="closeNotification()">X</button>
+    </div>
+
+
+    <main>
+
+        <h2>Welcome</h2>
+
+        <p>
+            Select an option from the navigation menu to access
+            your academic information.
+        </p>
+
+
+
+        <div class="slider">
+
+            <h2 id="slideTitle">Student Dashboard</h2>
+
+            <p id="slideText">
+                Check your academic information and important updates.
+            </p>
+
+            <button onclick="previousSlide()">Previous</button>
+            <button onclick="nextSlide()">Next</button>
+
+        </div>
+
+
+
+        <button class="open-btn" onclick="openModal()">
+            View Student Information
+        </button>
+
+
+
+        <div class="modal" id="modal">
+
+            <div class="modal-content">
+
+                <span class="close" onclick="closeModal()">&times;</span>
+
+                <h2>Student Hub Portal</h2>
+
+                <p>
+                    This portal helps students access their
+                    academic information, profile, dashboard,
+                    events and other services.
+                </p>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <footer>
+        <p>&copy; 2026 Student Hub Portal</p>
+    </footer>
+
+
+    <script>
+
+
+        function showMenu() {
+            let menu = document.getElementById("menu");
+
+            if (menu.style.display === "block") {
+                menu.style.display = "none";
+            } else {
+                menu.style.display = "block";
+            }
+        }
+
+
+
+        function closeNotification() {
+            document.getElementById("notification").style.display = "none";
+        }
+
+
+
+        function openModal() {
+            document.getElementById("modal").style.display = "block";
+        }
+
+        function closeModal() {
+            document.getElementById("modal").style.display = "none";
+        }
+
+
+
+        let slideNumber = 0;
+
+        let titles = [
+            "Student Dashboard",
+            "Upcoming Events",
+            "Student Services"
+        ];
+
+        let texts = [
+            "Check your academic information and important updates.",
+            "View upcoming college events and activities.",
+            "Access different services available for students."
+        ];
+
+
+        function showSlide() {
+            document.getElementById("slideTitle").innerHTML =
+                titles[slideNumber];
+
+            document.getElementById("slideText").innerHTML =
+                texts[slideNumber];
+        }
+
+
+        function nextSlide() {
+
+            slideNumber++;
+
+            if (slideNumber >= titles.length) {
+                slideNumber = 0;
+            }
+
+            showSlide();
+        }
+
+
+        function previousSlide() {
+
+            slideNumber--;
+
+            if (slideNumber < 0) {
+                slideNumber = titles.length - 1;
+            }
+
+            showSlide();
+        }
+
+
+
+        function changeTheme() {
+            document.body.classList.toggle("dark");
+        }
+
+    </script>
+
+</body>
+
+</html>

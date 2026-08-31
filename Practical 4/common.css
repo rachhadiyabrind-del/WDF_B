@@ -1,0 +1,80 @@
+header {
+    background: #065f46;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 26px;
+}
+
+header nav {
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 12px;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+header nav a:hover {
+    background: rgba(255, 255, 255, 0.15);
+    color: #fff;
+    text-decoration: none;
+}
+
+body.dark {
+    background-color: #1e1e1e;
+    color: #fff;
+}
+
+body.dark main {
+    background-color: #333;
+    color: #fff;
+}
+
+body.dark main h2 {
+    color: #34d399;
+}
+
+body.dark form {
+    background-color: #333;
+    color: #fff;
+}
+
+body.dark form label {
+    color: #fff;
+}
+
+body.dark .card {
+    background-color: #333;
+    color: #34d399;
+}
+
+body.dark footer {
+    background: #064e3b;
+}
+
+footer {
+    background: #065f46;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+}
