@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h2>Student Registration Form</h2>
+
+    <form id="registrationForm">
+
+        <label>Full Name</label>
+        <input type="text" id="name" placeholder="Enter your name">
+        <small id="nameError"></small>
+
+        <label>Email</label>
+        <input type="email" id="email" placeholder="Enter your email">
+        <small id="emailError"></small>
+
+        <label>Mobile Number</label>
+        <input type="tel" id="mobile" placeholder="Enter 10 digit mobile number">
+        <small id="mobileError"></small>
+
+        <label>Password</label>
+        <input type="password" id="password" placeholder="Enter password">
+        <small id="passwordError"></small>
+
+        <label>Confirm Password</label>
+        <input type="password" id="confirmPassword" placeholder="Re-enter password">
+        <small id="confirmPasswordError"></small>
+
+        <label>Course</label>
+        <select id="course">
+            <option value="">Select Course</option>
+            <option>B.Tech</option>
+            <option>BCA</option>
+            <option>BBA</option>
+            <option>MCA</option>
+        </select>
+        <small id="courseError"></small>
+
+        <label>Year</label>
+        <select id="year">
+            <option value="">Select Year</option>
+            <option>1st Year</option>
+            <option>2nd Year</option>
+            <option>3rd Year</option>
+            <option>4th Year</option>
+        </select>
+        <small id="yearError"></small>
+
+        <label>Gender</label>
+
+        <div class="gender">
+            <input type="radio" name="gender" value="Male"> Male
+            <input type="radio" name="gender" value="Female"> Female
+            <input type="radio" name="gender" value="Other"> Other
+        </div>
+
+        <small id="genderError"></small>
+
+        <div class="terms">
+            <input type="checkbox" id="terms">
+            I accept the terms and conditions
+        </div>
+
+        <small id="termsError"></small>
+
+        <button type="submit">Register</button>
+
+        <p id="successMessage"></p>
+
+    </form>
+
+</div>
+
+
+<script>
+
+document.getElementById("registrationForm").addEventListener("submit", function(event) {
+
+    event.preventDefault();
+
+    let valid = true;
+
+    let name = document.getElementById("name").value.trim();
+    let email = document.getElementById("email").value.trim();
+    let mobile = document.getElementById("mobile").value.trim();
+    let password = document.getElementById("password").value;
+    let confirmPassword = document.getElementById("confirmPassword").value;
+    let course = document.getElementById("course").value;
+    let year = document.getElementById("year").value;
+    let gender = document.querySelector('input[name="gender"]:checked');
+    let terms = document.getElementById("terms").checked;
+
+    document.querySelectorAll("small").forEach(function(error) {
+        error.textContent = "";
+    });
+
+    document.getElementById("successMessage").textContent = "";
+
+
+    let namePattern = /^[A-Za-z ]{3,50}$/;
+    let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    let mobilePattern = /^[6-9][0-9]{9}$/;
+    let passwordPattern = /^(?=.*[A-Za-z])(?=.*[0-9])(?=.*[@#$%]).{8,}$/;
+
+
+
+    if (!namePattern.test(name)) {
+        document.getElementById("nameError").textContent =
+            "Please enter a valid name.";
+        valid = false;
+    }
+
+
+
+    if (!emailPattern.test(email)) {
+        document.getElementById("emailError").textContent =
+            "Please enter a valid email.";
+        valid = false;
+    }
+
+
+
+    if (!mobilePattern.test(mobile)) {
+        document.getElementById("mobileError").textContent =
+            "Enter a valid 10 digit mobile number.";
+        valid = false;
+    }
+
+
+
+    if (!passwordPattern.test(password)) {
+        document.getElementById("passwordError").textContent =
+            "Password must be 8 characters with letter, number and special character.";
+        valid = false;
+    }
+
+
+
+    if (password !== confirmPassword) {
+        document.getElementById("confirmPasswordError").textContent =
+            "Passwords do not match.";
+        valid = false;
+    }
+
+
+
+    if (course === "") {
+        document.getElementById("courseError").textContent =
+            "Please select a course.";
+        valid = false;
+    }
+
+
+
+    if (year === "") {
+        document.getElementById("yearError").textContent =
+            "Please select your year.";
+        valid = false;
+    }
+
+
+
+    if (!gender) {
+        document.getElementById("genderError").textContent =
+            "Please select your gender.";
+        valid = false;
+    }
+
+
+
+    if (!terms) {
+        document.getElementById("termsError").textContent =
+            "Please accept the terms and conditions.";
+        valid = false;
+    }
+
+
+
+    if (valid) {
+
+        document.getElementById("successMessage").textContent =
+            "Registration successful!";
+
+        document.getElementById("registrationForm").reset();
+    }
+
+});
+
+</script>
+
+</body>
+</html>
