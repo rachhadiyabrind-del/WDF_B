@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Profiles</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Student Profiles</h1>
+
+        <div class="controls">
+            <input type="text" id="search" placeholder="Search student...">
+
+            <select id="courseFilter">
+                <option value="all">All Courses</option>
+                <option value="Computer Engineering">Computer Engineering</option>
+                <option value="Information Technology">Information Technology</option>
+                <option value="Mechanical Engineering">Mechanical Engineering</option>
+                <option value="Civil Engineering">Civil Engineering</option>
+            </select>
+
+            <select id="sort">
+                <option value="default">Sort By</option>
+                <option value="name">Name</option>
+                <option value="marksHigh">Marks: High to Low</option>
+                <option value="marksLow">Marks: Low to High</option>
+            </select>
+        </div>
+
+        <div id="studentContainer"></div>
+
+        <div class="pagination">
+            <button id="prev">Previous</button>
+            <span id="pageNumber">Page 1</span>
+            <button id="next">Next</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

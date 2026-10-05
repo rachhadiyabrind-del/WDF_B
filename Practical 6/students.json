@@ -1,0 +1,58 @@
+[
+    {
+        "id": 1,
+        "name": "Brind Rachhadiya",
+        "email": "brind@example.com",
+        "course": "Computer Engineering",
+        "marks": 85
+    },
+    {
+        "id": 2,
+        "name": "Rahul Patel",
+        "email": "rahul@example.com",
+        "course": "Information Technology",
+        "marks": 78
+    },
+    {
+        "id": 3,
+        "name": "Krisha Shah",
+        "email": "krisha@example.com",
+        "course": "Computer Engineering",
+        "marks": 92
+    },
+    {
+        "id": 4,
+        "name": "Dev Patel",
+        "email": "dev@example.com",
+        "course": "Mechanical Engineering",
+        "marks": 74
+    },
+    {
+        "id": 5,
+        "name": "Dhruvi Mehta",
+        "email": "dhruvi@example.com",
+        "course": "Information Technology",
+        "marks": 88
+    },
+    {
+        "id": 6,
+        "name": "Jay Shah",
+        "email": "jay@example.com",
+        "course": "Computer Engineering",
+        "marks": 81
+    },
+    {
+        "id": 7,
+        "name": "Meet Joshi",
+        "email": "meet@example.com",
+        "course": "Civil Engineering",
+        "marks": 69
+    },
+    {
+        "id": 8,
+        "name": "Riya Patel",
+        "email": "riya@example.com",
+        "course": "Information Technology",
+        "marks": 95
+    }
+]
