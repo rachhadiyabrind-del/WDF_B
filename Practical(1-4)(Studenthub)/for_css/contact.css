@@ -1,0 +1,62 @@
+/* ==========================================================================
+   StudentHub - Contact Page Styles
+   ========================================================================== */
+
+.contact-main {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.contact-layout-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    gap: 24px;
+    align-items: start;
+}
+
+.contact-info-col {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.info-box {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 20px;
+}
+
+.info-icon {
+    font-size: 1.8rem;
+    line-height: 1;
+    flex-shrink: 0;
+}
+
+.info-box h4 {
+    font-size: 1.05rem;
+    color: var(--text-main);
+    margin-bottom: 4px;
+}
+
+.info-box p {
+    font-size: 0.88rem;
+    color: var(--text-muted);
+    margin-bottom: 2px;
+}
+
+.contact-form-card form {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+@media (max-width: 860px) {
+    .contact-layout-grid {
+        grid-template-columns: 1fr;
+    }
+}
