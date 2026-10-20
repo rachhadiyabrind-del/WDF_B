@@ -28,7 +28,7 @@ function validate_student(array $in): array
     ];
     $err = [];
 
-    if (!preg_match('/^[A-Z0-9]{5,15}$/', $d['student_id'])) $err['student_id'] = 'Student ID must be 5-15 letters/digits (e.g. 25DCE072).';
+    if (!preg_match('/^[A-Z0-9]{5,15}$/', $d['student_id'])) $err['student_id'] = 'Student ID must be 5-15 letters/digits (e.g. 25DCE096).';
     if (!preg_match("/^[A-Za-z][A-Za-z .'-]{2,59}$/", $d['fullname'])) $err['fullname'] = 'Name must be 3-60 letters (spaces, dots, hyphens allowed).';
     if (!filter_var($d['email'], FILTER_VALIDATE_EMAIL) || strlen($d['email']) > 100) $err['email'] = 'Enter a valid e-mail address.';
     if (!preg_match('/^[0-9]{10}$/', $d['mobile'])) $err['mobile'] = 'Mobile number must be exactly 10 digits.';

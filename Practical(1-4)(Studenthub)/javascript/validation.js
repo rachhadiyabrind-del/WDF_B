@@ -17,7 +17,7 @@
   // ---------------------------------------------------------------
   const PATTERNS = {
     fullname: /^[A-Za-z][A-Za-z .'-]{2,59}$/,                // 3-60 letters, spaces, dot, hyphen, apostrophe
-    student_id: /^[A-Za-z0-9]{5,15}$/,                       // e.g. 25DCE072
+    student_id: /^[A-Za-z0-9]{5,15}$/,                       // e.g. 25DCE096
     email: /^[A-Za-z0-9._%+-]+@[A-Za-z0-9-]+(\.[A-Za-z0-9-]+)*\.[A-Za-z]{2,}$/,
     mobile: /^[0-9]{10}$/,                                   // exactly 10 digits
     passwordRules: {
@@ -43,7 +43,7 @@
     student_id: function (form) {
       const v = form.student_id.value.trim();
       if (!v) return 'Student ID / roll number is required.';
-      if (!PATTERNS.student_id.test(v)) return 'Student ID must be 5-15 letters/digits, e.g. 25DCE072.';
+      if (!PATTERNS.student_id.test(v)) return 'Student ID must be 5-15 letters/digits, e.g. 25DCE096.';
       return '';
     },
     mobile: function (form) {

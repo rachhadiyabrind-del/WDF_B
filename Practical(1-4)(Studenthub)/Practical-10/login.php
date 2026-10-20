@@ -98,7 +98,7 @@ sh_header(['title' => 'Login', 'active' => 'login', 'css' => ['../for_css/signup
       <?= csrf_field() ?>
       <div class="form-group">
         <label for="identifier">E-mail or Student ID:</label>
-        <input type="text" id="identifier" name="identifier" required autocomplete="username" value="<?= e($identifier) ?>" placeholder="e.g. 25dce072@charusat.edu.in">
+        <input type="text" id="identifier" name="identifier" required autocomplete="username" value="<?= e($identifier) ?>" placeholder="e.g. 25dce096@charusat.edu.in">
       </div>
       <div class="form-group">
         <label for="password">Password:</label>

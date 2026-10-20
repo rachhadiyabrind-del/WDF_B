@@ -1,12 +1,12 @@
 [
   {
     "id": 1,
-    "studentId": "25DCE072",
-    "name": "Aarav Hiteshkumar Patel",
+    "studentId": "25DCE096",
+    "name": "Brind Vinodbhai Rachhadiya",
     "department": "Computer Engineering",
     "degree": "B.Tech",
     "semester": 3,
-    "email": "25dce072@charusat.edu.in",
+    "email": "25dce096@charusat.edu.in",
     "phone": "+91 84690 12345",
     "sgpa": 8.20,
     "attendance": 85,
