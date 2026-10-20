@@ -1,0 +1,35 @@
+[
+    {
+        "id": 1,
+        "fullname": "Brind Vinodbhai Rachhadiya",
+        "student_id": "25DCE096",
+        "email": "25dce096@charusat.edu.in",
+        "mobile": "8469012345",
+        "course": "Computer Engineering",
+        "year": "2nd Year (Semester 3/4)",
+        "gender": "Male",
+        "registration_date": "2026-10-20 08:50:50"
+    },
+    {
+        "id": 2,
+        "fullname": "Riya Shah",
+        "student_id": "25DIT034",
+        "email": "riya.shah@charusat.edu.in",
+        "mobile": "9825123456",
+        "course": "Information Technology",
+        "year": "2nd Year (Semester 3/4)",
+        "gender": "Female",
+        "registration_date": "2026-10-20 08:50:51"
+    },
+    {
+        "id": 3,
+        "fullname": "Karan Mehta",
+        "student_id": "25DAI011",
+        "email": "karan.mehta@charusat.edu.in",
+        "mobile": "9724567890",
+        "course": "AI & Data Science",
+        "year": "2nd Year (Semester 3/4)",
+        "gender": "Male",
+        "registration_date": "2026-10-20 08:50:53"
+    }
+]

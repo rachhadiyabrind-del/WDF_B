@@ -1,0 +1,76 @@
+/* ==========================================================================
+   StudentHub - Assignment Page Styles
+   ========================================================================== */
+
+.assignment-main {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.assignment-cards-list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.assignment-card {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.assignment-header-row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.assignment-title-wrap {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.practical-num-badge {
+    background: var(--bg-subsurface);
+    color: var(--primary);
+    border: 1.5px solid var(--border-color);
+    font-size: 1.1rem;
+    font-weight: 800;
+    width: 44px;
+    height: 44px;
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+body.dark-theme .practical-num-badge {
+    color: var(--primary-light);
+}
+
+.assignment-title-wrap h3 {
+    font-size: 1.15rem;
+    margin-bottom: 2px;
+    color: var(--text-main);
+}
+
+.course-name {
+    font-size: 0.82rem;
+    color: var(--text-faint);
+    font-weight: 600;
+}
+
+.assignment-footer-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-top: 12px;
+    border-top: 1px solid var(--border-color);
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}

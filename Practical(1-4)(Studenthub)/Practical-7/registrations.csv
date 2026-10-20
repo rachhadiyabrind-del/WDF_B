@@ -1,0 +1,4 @@
+id,fullname,student_id,email,mobile,course,year,gender,registration_date
+1,"Brind Vinodbhai Rachhadiya",25DCE096,25dce096@charusat.edu.in,8469012345,"Computer Engineering","2nd Year (Semester 3/4)",Male,"2026-10-20 08:50:50"
+2,"Riya Shah",25DIT034,riya.shah@charusat.edu.in,9825123456,"Information Technology","2nd Year (Semester 3/4)",Female,"2026-10-20 08:50:51"
+3,"Karan Mehta",25DAI011,karan.mehta@charusat.edu.in,9724567890,"AI & Data Science","2nd Year (Semester 3/4)",Male,"2026-10-20 08:50:53"

@@ -1,0 +1,53 @@
+/* ==========================================================================
+   StudentHub - About Us Page Styles
+   ========================================================================== */
+
+.about-main {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.mission-card {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.mission-card p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+.features-columns {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-top: 12px;
+}
+
+.feat-col {
+    background: var(--bg-subsurface);
+    border: 1px solid var(--border-color);
+    padding: 16px;
+    border-radius: var(--radius-sm);
+}
+
+.feat-col strong {
+    color: var(--text-main);
+    display: block;
+    margin-bottom: 6px;
+    font-size: 0.95rem;
+}
+
+.feat-col p {
+    font-size: 0.88rem;
+    color: var(--text-muted);
+}
